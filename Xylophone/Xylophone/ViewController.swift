@@ -124,8 +124,9 @@ class ViewController: UIViewController {
         
         var lastColor:[RGB_Color] = [RGB_Color(r: 0, g: 0, b: 0)]
         var count = 1
+        print("\n\n")
         for button in allButtons{
-            print("Button \(count)")
+            print("Generating Button \(count) Colors")
 
             var currentColor = randomColor()
             var similarity = displayScoreAsPercent(baseColor: currentColor, matchArray: lastColor)
@@ -139,7 +140,7 @@ class ViewController: UIViewController {
                     if simCount > simHighScore{
                         defaults.set(simCount, forKey: "simCountHighScore")
                     }
-                    print("Similarity loop iteration \(simCount). Current high score is \(simHighScore)")
+                    //print("Similarity loop iteration \(simCount). Current high score is \(simHighScore)")
                     currentColor = randomColor()
                     similarity = displayScoreAsPercent(baseColor: currentColor, matchArray: lastColor)
                     simCount += 1
@@ -193,6 +194,7 @@ extension CGFloat {
     }
 }
 
+//Adds a "generate random color" function to UIColor class
 extension UIColor {
     static func random() -> UIColor {
         return UIColor(
