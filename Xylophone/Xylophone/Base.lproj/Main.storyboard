@@ -16,7 +16,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="0xV-1i-mq0">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="0xV-1i-mq0">
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y5B-4o-mfQ">
@@ -91,12 +91,20 @@
                                     </button>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="Q0A-Um-M1P" firstAttribute="height" secondItem="y5B-4o-mfQ" secondAttribute="height" id="JK2-Oy-0MB"/>
-                                    <constraint firstItem="8Ne-dR-JeH" firstAttribute="height" secondItem="y5B-4o-mfQ" secondAttribute="height" id="S9P-f5-ZGQ"/>
-                                    <constraint firstItem="HlG-Yd-Sq5" firstAttribute="height" secondItem="y5B-4o-mfQ" secondAttribute="height" id="cvl-wz-RPe"/>
-                                    <constraint firstItem="1cv-7u-SZq" firstAttribute="height" secondItem="y5B-4o-mfQ" secondAttribute="height" id="e3C-Jc-NVT"/>
-                                    <constraint firstItem="VJR-Qa-mFb" firstAttribute="height" secondItem="y5B-4o-mfQ" secondAttribute="height" id="tEd-98-4qi"/>
-                                    <constraint firstItem="5du-bk-iSL" firstAttribute="height" secondItem="y5B-4o-mfQ" secondAttribute="height" id="uj9-OE-KVB"/>
+                                    <constraint firstAttribute="trailing" secondItem="1cv-7u-SZq" secondAttribute="trailing" constant="20" id="AcV-Ag-AxJ"/>
+                                    <constraint firstAttribute="trailing" secondItem="5du-bk-iSL" secondAttribute="trailing" constant="40" id="C1U-vO-0PB"/>
+                                    <constraint firstItem="5du-bk-iSL" firstAttribute="leading" secondItem="0xV-1i-mq0" secondAttribute="leading" constant="40" id="DUA-8B-gew"/>
+                                    <constraint firstItem="VJR-Qa-mFb" firstAttribute="leading" secondItem="0xV-1i-mq0" secondAttribute="leading" constant="30" id="RvY-yG-Q8A"/>
+                                    <constraint firstAttribute="trailing" secondItem="VJR-Qa-mFb" secondAttribute="trailing" constant="30" id="SWx-9a-1cQ"/>
+                                    <constraint firstItem="HlG-Yd-Sq5" firstAttribute="leading" secondItem="0xV-1i-mq0" secondAttribute="leading" constant="10" id="TD6-zw-Iwo"/>
+                                    <constraint firstItem="1cv-7u-SZq" firstAttribute="leading" secondItem="0xV-1i-mq0" secondAttribute="leading" constant="20" id="Vfp-eF-GcT"/>
+                                    <constraint firstAttribute="trailing" secondItem="HlG-Yd-Sq5" secondAttribute="trailing" constant="10" id="XqF-FX-XOG"/>
+                                    <constraint firstAttribute="trailing" secondItem="y5B-4o-mfQ" secondAttribute="trailing" id="ZKN-yu-VA8"/>
+                                    <constraint firstItem="y5B-4o-mfQ" firstAttribute="leading" secondItem="0xV-1i-mq0" secondAttribute="leading" id="hkl-lS-o3f"/>
+                                    <constraint firstAttribute="trailing" secondItem="Q0A-Um-M1P" secondAttribute="trailing" constant="60" id="pDt-0n-XtA"/>
+                                    <constraint firstItem="8Ne-dR-JeH" firstAttribute="leading" secondItem="0xV-1i-mq0" secondAttribute="leading" constant="50" id="sMp-2G-GPv"/>
+                                    <constraint firstItem="Q0A-Um-M1P" firstAttribute="leading" secondItem="0xV-1i-mq0" secondAttribute="leading" constant="60" id="wEl-MH-HhL"/>
+                                    <constraint firstAttribute="trailing" secondItem="8Ne-dR-JeH" secondAttribute="trailing" constant="50" id="yey-Z4-MCP"/>
                                 </constraints>
                             </stackView>
                         </subviews>
@@ -117,6 +125,7 @@
                         <outlet property="eButton" destination="1cv-7u-SZq" id="0NI-dp-l5I"/>
                         <outlet property="fButton" destination="VJR-Qa-mFb" id="Ss4-5c-IYv"/>
                         <outlet property="gButton" destination="5du-bk-iSL" id="Ob7-Fp-03k"/>
+                        <outlet property="stackView" destination="0xV-1i-mq0" id="uOH-mJ-WV3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

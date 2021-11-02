@@ -21,19 +21,21 @@ class ViewController: UIViewController {
     var allButtons:[UIButton] = []
     var player: AVAudioPlayer!
     
+    @IBOutlet weak var stackView: UIStackView!
     
     //MARK: ViewDidLoad()
     override func viewDidLoad() {
         super.viewDidLoad()
         
         allButtons = [cButton, dButton, eButton, fButton, gButton, aButton, bButton]
-        cButton.frame.size = CGSize(width: UIScreen.screenWidth, height: cButton.frame.height)
+        
       
     }
     
     
     //MARK: Color Similarity Test
     override func viewDidAppear(_ animated: Bool) {
+        
         
         similarityTest()
         
@@ -44,30 +46,37 @@ class ViewController: UIViewController {
     @IBAction func cTapped(_ sender: Any) {
         playSound(.C)
         cButton.titleLabel?.textColor = cButton.backgroundColor?.inverseColor()
+        //view.backgroundColor = cButton.backgroundColor
     }
     @IBAction func dTapped(_ sender: Any) {
         playSound(.D)
         dButton.titleLabel?.textColor = dButton.backgroundColor?.inverseColor()
+        //view.backgroundColor = dButton.backgroundColor
     }
     @IBAction func eTapped(_ sender: Any) {
         playSound(.E)
         eButton.titleLabel?.textColor = eButton.backgroundColor?.inverseColor()
+        //view.backgroundColor = eButton.backgroundColor
     }
     @IBAction func fTapped(_ sender: Any) {
         playSound(.F)
         fButton.titleLabel?.textColor = fButton.backgroundColor?.inverseColor()
+        //view.backgroundColor = fButton.backgroundColor
     }
     @IBAction func gTapped(_ sender: Any) {
         playSound(.G)
         gButton.titleLabel?.textColor = gButton.backgroundColor?.inverseColor()
+        //view.backgroundColor = gButton.backgroundColor
     }
     @IBAction func aTapped(_ sender: Any) {
         playSound(.A)
         aButton.titleLabel?.textColor = aButton.backgroundColor?.inverseColor()
+        //view.backgroundColor = aButton.backgroundColor
     }
     @IBAction func bTapped(_ sender: Any) {
         playSound(.B)
         bButton.titleLabel?.textColor = bButton.backgroundColor?.inverseColor()
+        //view.backgroundColor = bButton.backgroundColor
     }
     
     
